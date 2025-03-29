@@ -1,0 +1,79 @@
+@import '../lista1/styleLista1.css';
+
+
+.pastas{
+    display: grid;
+    gap: 5.5vh;
+    padding-left: 1.2vw;
+    padding-top: 3vh;
+    grid-template-columns: repeat(2, 3vw);
+}
+
+.resultado{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+}
+
+
+/* #prompt-container {
+    margin: 20px 0;
+}
+
+#inputs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.numero {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+} */
+
+#calcular {
+    margin-top: 4vh;
+    padding: 7px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#calcular:hover {
+    background-color: #45a049;
+}
+
+
+.calcular {
+    margin-top: 4vh;
+    padding: 7px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.calcular:hover {
+    background-color: #1c5f20;
+}
+
+
+
+#inputs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+    gap: 10px; 
+}

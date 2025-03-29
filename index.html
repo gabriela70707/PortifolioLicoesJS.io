@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+
+    <!--Importação de Fonte-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+    </style>
+
+</head>
+<body>
+    <div class="projetos">
+        <div class="texto">
+            <h1>Escolha um Usuario:</h1>
+        </div>
+        <div class="opcoes">
+
+        <div class="op1 icone" class="download-div" onclick="baixarPasta()" style="text-decoration: none; color: aliceblue;">
+                    <img src="./images/icone-usuario.png" alt="icone de usuario" >
+                    <p>Aulas</p>
+        </div>
+        <a id="downloadLink" href="./Front-End - Aulas.zip" download style="display: none;"></a>
+
+        <script>
+            function baixarPasta() {
+            const downloadLink = document.getElementById('downloadLink');
+            downloadLink.click();
+            }
+        </script>
+
+            <a href="https://www.figma.com/design/1jvxDS5HuqpVP6xqbZTVyA/Untitled?node-id=0-1&p=f&t=pRQuAVBNSb8M5PbA-0" style="text-decoration: none; color: aliceblue;">
+                <div class="op2 icone" >
+                    <img src="./images/icone-usuario.png" alt="icone de usuario" >
+                    <p>Figma</p>
+                </div>
+            </a>
+
+
+            <!-- Tela de carregamento -->
+        <div id="loading-screen" style="display: none;">
+            <img src="./images/tela_carregamento.gif" alt="Carregando...">
+        </div>
+
+        <!-- Links para as listas -->
+        <a href="./lista1/lista1.html" class="link-lista" data-link="./lista1/lista1.html" style="text-decoration: none; color: aliceblue;">
+            <div class="op2 icone">
+                <img src="./images/icone-usuario.png" alt="icone de usuario">
+                <p>Lista 1</p>
+            </div>
+        </a>
+
+        <a href="./lista2/lista2.html" class="link-lista" data-link="./lista2/lista2.html" style="text-decoration: none; color: aliceblue;">
+            <div class="op3 icone">
+                <img src="./images/icone-usuario.png" alt="icone de usuario">
+                <p>Lista 2</p>
+            </div>
+        </a>
+
+        <a href="./lista3/lista3.html" class="link-lista" data-link="./lista3/lista3.html" style="text-decoration: none; color: aliceblue;">
+            <div class="op4 icone">
+                <img src="./images/icone-usuario.png" alt="icone de usuario">
+                <p>Lista 3</p>
+            </div>
+        </a>
+
+            <div class="op1 icone" class="download-div" onclick="baixarPasta()" style="text-decoration: none; color: aliceblue;">
+                <img src="./images/icone-usuario.png" alt="icone de usuario" >
+                <p>Anotações</p>
+            </div>
+            <a id="downloadLinkAnotacoes" href="./Anotações das Aulas.zip" download style="display: none;"></a>
+
+            <script>
+                function baixarPasta() {
+                const downloadLink = document.getElementById('downloadLinkAnotacoes');
+                downloadLink.click();
+                }
+            </script>
+
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+    
+</body>
+</html>

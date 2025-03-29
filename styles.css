@@ -1,0 +1,208 @@
+/* Resetações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Jersey 10", serif;
+}
+
+
+body {
+    background-image: url('./images/fundo.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover; /* Preenche a tela inteira */
+    background-position: center center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Mantém o fundo fixo */
+    height: 100vh; 
+    width: 100%; 
+    overflow: hidden; /* Remove rolagem indesejada */
+}
+
+
+h1 {
+    font-size: 5vh;
+    color: rgb(6, 64, 131);
+    letter-spacing: 0.2vw;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
+
+.texto {
+    align-content: center;
+    text-align: center; 
+}
+
+
+.projetos {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: calc(100vh - 5vh); 
+    gap: 20px; 
+}
+
+
+.opcoes {
+    display: flex;
+    flex-wrap: wrap; /* Torna o layout responsivo */
+    width: 80%;
+    height: auto; /* Ajusta altura automaticamente */
+    gap: 3vw;
+    color: aliceblue;
+    font-size: 4vh;
+    justify-content: center; 
+    padding-bottom: 15vh;
+}
+
+.opcoes img {
+    height: 15vh;
+    width: auto; /* Mantém proporção */
+}
+
+
+.icone {
+    display: grid;
+    width: 25vw;
+    max-width: 300px; /* Limita o tamanho máximo para maior responsividade */
+    height: auto; /* Ajusta altura automaticamente */
+    align-items: center;
+    justify-items: center;
+    padding: 0.8vh;
+    border-radius: 2vw;
+    background-color: rgba(23, 67, 148, 0.801);
+    text-align: center;
+}
+
+.icone:hover {
+    background-color: rgba(11, 46, 110, 0.801);
+}
+
+.icone {
+    cursor: pointer;
+}
+
+
+/* Tela de carregamento */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo translúcido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Fica acima de todo o conteúdo */
+}
+
+#loading-screen img {
+    width: 100vw; /* Ajuste o tamanho do GIF */
+    height: auto;
+}
+
+
+
+footer {
+    position: fixed; /* Fixa o footer na parte inferior da tela */
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(108, 143, 209, 0.829);
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    z-index: 1000; /* Garante que o footer fique acima dos outros elementos */
+}
+
+
+@media (max-width: 768px) {
+    body {
+        background-size: cover; 
+    }
+
+    .projetos {
+        gap: 10px;
+    }
+
+    .icone {
+        width: 80%;
+        padding: 10px;
+        font-size: 2vh; 
+    }
+
+    h1 {
+        font-size: 4vh;
+    }
+
+    .opcoes img {
+        height: 10vh;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 3vh;
+    }
+
+    .icone {
+        width: 90%;
+        font-size: 1.5vh; 
+        padding: 5px;
+    }
+
+    .opcoes img {
+        height: 8vh;
+    }
+
+    .projetos {
+        height: auto; 
+        gap: 5px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .projetos {
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .opcoes {
+        font-size: 3.5vh;
+        gap: 2vw;
+    }
+
+    .icone {
+        width: 20vw;
+        max-width: 280px;
+    }
+
+    h1 {
+        font-size: 4.5vh;
+    }
+}
+
+
+@media (min-width: 1441px) {
+    .projetos {
+        gap: 40px;
+        padding: 30px;
+    }
+
+    .opcoes {
+        font-size: 4.5vh;
+        gap: 2vw;
+    }
+
+    .icone {
+        width: 18vw;
+        max-width: 260px;
+    }
+
+    h1 {
+        font-size: 5.5vh;
+    }
+}

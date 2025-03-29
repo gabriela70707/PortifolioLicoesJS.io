@@ -1,0 +1,10 @@
+@import '../lista1/styleLista1.css';
+@import '../lista3/style3.css';
+
+.pastas{
+    display: grid;
+    gap: 5.5vh;
+    padding-left: 1.2vw;
+    padding-top: 5vh;
+    grid-template-columns: repeat(3, 3vw);
+}
